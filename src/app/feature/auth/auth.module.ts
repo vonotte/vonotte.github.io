@@ -1,11 +1,9 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { NgModule } from '@angular/core';
 import { AuthRoutingModule } from './auth-routing.module';
 import { LoginFormComponent } from './components/login-form/login-form.component';
-import { MatButtonModule } from '@angular/material/button';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import {InputTextModule} from 'primeng/inputtext';
 
 
 
@@ -17,9 +15,8 @@ import { MatInputModule } from '@angular/material/input';
   imports: [
     CommonModule,
     AuthRoutingModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatButtonModule,
+    InputTextModule
+
   ]
 })
 export class AuthModule { }
